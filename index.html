@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app = 'Vwrds'>
+<html>
 <head>
 	<meta charset = "UTF-8">
 	<meta name = "viewport" content = "width=device-width,initial-scale = 1">
@@ -24,18 +24,7 @@
 <body ng-app = 'Vwrds'>
 
 <h1> Vwrds</h1>
-
-
-
-
-<section ng-controller = "PoemsController as Poems">
-	<ul id = "allPoems">
-		<li ng-repeat = "poem in Poems.all">
-		<strong>{{poem.title}}</strong>
-		<span>{{poem.poem }} - <em>{{ poem.author}}</em></span>
-		
-	</ul>
-
+<section>
 	<form ng-submit = 'poems.addPoem()'>
 	<div>
 		<label for = 'newPoem-title'>Title:</label>
@@ -53,7 +42,18 @@
 		<input type="submit" value="Add Poem">
 	</div>
 	</form>
-</section>
+</<section>
+
+<div class = 'container'>
+	<div class = 'row'>
+		<div class = 'col-md-4 col-md-offset-4'></div>
+		<!-- templates should load/render here -->
+	</div>
+	
+</div>
+
+
+
 
 </body>
 </html>
