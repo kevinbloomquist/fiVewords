@@ -11,5 +11,8 @@ Angular:
 -ngResource
 Nodejs
 
-
+Checklist:
+-finish templates and organize front end
+-build back end
+models/schema/DB/server
 	
