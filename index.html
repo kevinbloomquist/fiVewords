@@ -18,18 +18,41 @@
     <link rel="stylesheet" href="css/style.css">
 
 
-	<!-- server.js -->
-	<script src = "server.js"></script>
+	<!-- app.js -->
+	<script src = "app.js"></script>
 </head>
-<body>
+<body ng-app = 'Vwrds'>
 
 <h1> Vwrds</h1>
+
+
+
 
 <section ng-controller = "PoemsController as Poems">
 	<ul id = "allPoems">
 		<li ng-repeat = "poem in Poems.all">
+		<strong>{{poem.title}}</strong>
+		<span>{{poem.poem }} - <em>{{ poem.author}}</em></span>
 		
 	</ul>
+
+	<form ng-submit = 'poems.addPoem()'>
+	<div>
+		<label for = 'newPoem-title'>Title:</label>
+		<input type = "text" id = "newPoem-title" ng-model = "poems.newPoem.title" placeholder = "Title">
+	<div>
+		<label for = 'newPoem-content'>Poem:</label>
+		<input type = "text" id = "newPoem-content" ng-model = "poems.newPoem.content" placeholder = "Five Words in Poetry Out">
+	</div>
+	<div>
+		<label for = 'newPoem-author'>By:</label>
+		<input type = "text" id = "newPoem-content"
+		ng-model = 'poems.newpoem,author' placeholder = 'Name'>
+	</div>
+	<div>
+		<input type="submit" value="Add Poem">
+	</div>
+	</form>
 </section>
 
 </body>
