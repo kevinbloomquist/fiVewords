@@ -14,7 +14,7 @@ function PoemsController($resource,PoemsFact) {
 
 	getPoems();
 
-function addPoem(){
+	function addPoem(){
 	vm.newPoem = PoemFact.save();
 	}
 	getPoems();
