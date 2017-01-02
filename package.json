@@ -1,0 +1,26 @@
+{
+  "name": "fiVewords",
+  "version": "1.0.0",
+  "description": "Rapid prototype exercise -- Full stack MEAN app that collects sumbissions for 5 word poems and saves them to a database.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinbloomquist/fiVewords.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinbloomquist/fiVewords/issues"
+  },
+  "homepage": "https://github.com/kevinbloomquist/fiVewords#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.7.5"
+  }
+}
